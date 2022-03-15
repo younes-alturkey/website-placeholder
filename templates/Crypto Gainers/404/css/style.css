@@ -1,0 +1,312 @@
+/*
+Theme Name: HUGE
+Description: Creative Coming Soon Template
+Author: SquirrelLabs
+Author URI: https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLab
+Version: 1.0
+License: https://themeforest.net/licenses/standard
+
+---
+
+/*******************************
+  Table of Contents
+
+  1.0 General Styles
+  2.0 Content Styles
+  3.0 Crypto Gainers
+*******************************/
+
+/**********************************/
+/******* 1.0 General Styles *******/
+/**********************************/
+html{
+  min-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: linear-gradient(45deg,#130c31,#40284c);
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400
+}
+
+/**********************************/
+/******* 2.0 Content Styles *******/
+/**********************************/
+header {
+  text-align: center;
+  position: absolute!important;
+}
+
+header .logo {
+  height: 32px;
+  box-sizing: content-box;
+}
+
+.btn {
+  font-size:14px;
+  color:#fff;
+  letter-spacing:1px;
+  overflow:hidden;
+  position:relative;
+  text-transform:uppercase;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 12px 19px;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background:transparent;
+  color:#000;
+  border-color:#222;
+  border: 2px solid #fff;
+  outline:none;
+  box-shadow:none;
+}
+
+.btn .mask {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: -1;
+  -moz-transition: all 0.9s cubic-bezier(0.2, 1, 0.25, 1) 0s;
+  -o-transition: all 0.9s cubic-bezier(0.2, 1, 0.25, 1) 0s;
+  -webkit-transition: all 0.9s cubic-bezier(0.2, 1, 0.25, 1) 0s;
+  transition: all 0.9s cubic-bezier(0.2, 1, 0.25, 1) 0s;
+}
+
+.btn:hover .mask {
+  width: 100%;
+}
+
+.huge-content a:hover {
+  opacity: 0.8;
+}
+.huge-section {
+  min-height: 100vh
+}
+
+.huge-side {
+  min-height: 100vh
+}
+
+.left-side {
+  background: transparent;
+}
+
+.left-side .huge-content {
+  color: #fff;
+  min-height: 100vh
+}
+
+.left-side .huge-content .logo {
+  height: 32px;
+  margin: 60px 0 100px;
+}
+
+.left-side .huge-content h1 {
+  color: #fff;
+  font-size: 4em;
+  position: relative;
+  font-weight: 400;
+  margin: 30px 0;
+  font-family: 'Baloo Bhaijaan',serif;
+}
+
+.left-side .huge-content h2 {
+  line-height: 1.5;
+  margin-bottom: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display',serif;
+}
+
+.left-side .btn {
+  margin-bottom: 80px;
+}
+
+.left-side .social-icons {
+  position: absolute;
+  bottom: 30px;
+  padding: 0;
+}
+
+.left-side .social-icons li {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.left-side .social-icons li:last-child {
+  margin-right: 0;
+}
+
+.left-side .social-icons li a {
+  color: #fff;
+}
+
+.left-side .social-icons li a:hover {
+  opacity: .8;
+}
+
+.right-side {
+  margin: 0;
+  padding: 0;
+}
+
+.right-side .huge-background-img {
+  height: 100vh;
+  background: #ECF3F7;
+}
+
+.right-side h3 {
+  text-align: center;
+  margin-top: -10vh;
+  font-size: 18px;
+  font-family: 'Baloo Bhaijaan',serif;
+  color: #778;
+}
+
+.colorful {
+  background: linear-gradient(to right, #fddd10, #ff6c2c, #e5e, #2fabe1);
+  background-size: 2000%;
+  animation: gradientBackground 10s alternate ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/**********************************/
+/******* 3.0 Crypto Gainers *******/
+/**********************************/
+#app {
+  font-family: 'Lato', 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.card {
+  background: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  overflow-y: auto;
+  box-shadow: -0.4rem 0.8rem 2rem rgba(176, 188, 207, 0.5), 
+              inset 0.2rem -0.2rem 0.7rem rgba(188, 188, 212, 0.73), 
+              inset 1rem -1rem 2rem rgba(10, 197, 137, 0.05);
+}
+.card__header {
+  height: 8rem;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-linear-gradient(45deg, #936AE4, #F7738F);
+  background: linear-gradient(45deg, #936AE4, #F7738F);
+}
+.card__title {
+  color: white;
+  margin: 0;
+  padding-top: 2rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@supports ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
+  .card__header {
+    background: rgba(147, 106, 228, 0.9);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+}
+.card__content {
+  /*height: 43rem;*/
+  overflow-y: auto;
+}
+.list {
+  padding: 1rem 0;
+}
+.list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .4rem;
+  cursor: pointer;
+}
+.list__item:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.asset__img {
+  width: 32px;
+  height: 32px;
+  margin: .2rem 1rem;
+}
+.asset__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.asset__name {
+  margin-right: auto;
+}
+.asset__change {
+  margin-right: 1rem;
+}
+
+.selected {
+  margin: auto;
+}
+.selected__price {
+  color: white;
+}
+.selected__name {
+  color: #f0f0f0;
+}

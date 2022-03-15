@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+    <title>HUGE 404 - by SquirrelLabs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="huge">
+	<section id="scene" data-pointer-events="true" data-origin-x="0" data-origin-y="0" data-scalar-y="150.0" data-scalar-x="105.0" data-friction-x="0.05" data-friction-y="0.05">
+		<div class="layer main" data-depth="1.00" ng-controller="cardsController as cards">
+			<div class="col" ng-repeat="card in cards.cards">
+				<a href="{{card.url}}">
+					<div class="hover">
+						<div class="pad align-bottom">
+							<h2 ng-bind-html='card.title'></h2>
+						</div>
+					</div>
+					<div class="bg-img" style="background-image:url('{{card.image}}');"></div>
+				</a>
+			</div>
+		</div>
+		<div class="layer gradient" data-depth="0.00">
+			<canvas id="canvas-basic"></canvas>
+		</div>
+	</section>
+
+	<script src='js/jquery.min.js'></script>
+	<script src='js/angular.min.js'></script>
+	<script src='js/angular-sanitize.min.js'></script>
+	<script src='js/parallax.min.js'></script>
+	<script src='js/granim.min.js'></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+/*
+Theme Name: HUGE
+Description: Creative Coming Soon Template
+Author: SquirrelLabs
+Author URI: https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLab
+Version: 1.0
+License: https://themeforest.net/licenses/standard
+
+---
+
+/*******************************
+  Table of Contents
+
+	1.0 General Styles 
+	2.0 Content Styles
+  3.0 Countdown
+
+*******************************/
+
+/**********************************/
+/******* 1.0 General Styles *******/
+/**********************************/
+ @font-face{
+    font-family:'MuseoSans-700';
+    src:url("../fonts/museo.eot");
+    src:url("../fonts/museo.eot") format("embedded-opentype"), url("../fonts/museo.woff") format("woff"), url("../fonts/museo.ttf") format("truetype")
+}
+
+body{
+	font-family: "MuseoSans-700",Helvetica,Arial,Verdana,sans-serif;
+    background:url("../images/bg.jpg");
+    color: #fff;
+    font-weight:normal;
+    line-height: 1.4;
+    margin:0;
+    padding:0;
+}
+
+ol,ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+}
+
+::-moz-selection{
+    background-color:#adcdea;
+    color:#333;
+    text-shadow:none
+}
+
+::selection{
+    background-color:#adcdea;
+    color:#333;
+    text-shadow:none
+}
+
+/**********************************/
+/******* 2.0 Content Styles *******/
+/**********************************/
+#pagewrap{
+	min-height: 400px;
+    overflow: hidden;
+}
+
+header{
+    height:52px;
+    position:fixed;
+    width:100%;
+    z-index:999;
+    background:#fff;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25)
+}
+header .logo {
+    margin:10px 0;
+}
+header .logo img {
+    height:32px;
+    margin-right: 10px
+}
+header .logo .link {
+	font-size:18px;
+	color: #222;
+	vertical-align:middle;
+}
+
+/* === duck === */
+#duck {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+#duck .duck-animation{
+ 	background: url(../images/duck.gif) no-repeat -1000px 30%;
+    height: 100px;
+}
+
+#parallax_wrapper{
+    width:1920px;
+    min-height:100%;
+    position:relative;
+    margin-left:-960px;
+}
+
+/* === scene's === */
+.scene{
+    position:absolute;
+    bottom:-100px;
+    width:1920px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.scene.scene_1{
+    height:336px;
+    background-image:url(../images/scene_1.png);
+    z-index:3;
+}
+.scene.scene_2{
+    height:500px;
+    background-image:url(../images/scene_2.png);
+    z-index:2;
+}
+.scene.scene_3{
+    height:500px;
+    background-image:url(../images/scene_3.png);
+    z-index:1;
+}
+
+/* === page content === */
+.content{
+    padding:130px 0 20px;
+    text-shadow:0px 1px 3px rgba(0,0,0,0.45);
+    max-width: 100vw;
+    margin: 0 auto;
+}
+.content h1{
+    font-size: 3.8em;
+    line-height:65px;
+}
+.content p{    
+	font-size:18px;
+	line-height:26px;
+    color:#fffbe5;
+}
+.content .button{
+    margin:35px 0;
+    position:relative;
+    z-index:99999;
+	background-image:-webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f3f3f3), color-stop(49%, #f0f0f0), color-stop(51%, #f8f8f8), color-stop(100%, #fff));
+	background-image:-webkit-linear-gradient(bottom, #f3f3f3 0%, #f0f0f0 49%, #f8f8f8 51%, #fff 100%);
+	background-image:-moz-linear-gradient(bottom, #f3f3f3 0%, #f0f0f0 49%, #f8f8f8 51%, #fff 100%);
+	background-image:-o-linear-gradient(bottom, #f3f3f3 0%, #f0f0f0 49%, #f8f8f8 51%, #fff 100%);
+	background-image:linear-gradient(bottom, #f3f3f3 0%,#f0f0f0 49%,#f8f8f8 51%,#ffffff 100%);
+	display:inline-block;
+	background-color:#f0f0f0;
+	color:#3987cc;
+	text-shadow:0 1px white;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 3px rgba(0,0,0,0.5);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 3px rgba(0,0,0,0.5);
+	padding:13px 30px;
+	border-radius:3px;
+	font-size:18px;
+}
+.content .button:hover{
+    opacity:0.85;
+    color:#222;
+    text-decoration:none;
+}
+
+/* === footer === */
+footer{
+	position: absolute;
+	z-index: 9;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+    font-size: 11px;
+    text-shadow: rgba(0,0,0,0.3) 0px 1px;
+    padding: 0px;
+}
+footer .copyright_info li {
+    margin: 10px 10px 0 0;
+    display: inline-block;
+}
+footer .links li {
+    margin: 10px 0 0 10px;
+    display: inline-block;
+}
+footer .links li a {
+    color: #fff;
+}
+
+/**********************************/
+/*******    3.0 Countdown   *******/
+/**********************************/
+#countdown {
+  margin: 10vh auto 1vh;
+  top: 5%;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 50%;
+}
+
+#countdown.show {
+  display: block;
+}
+
+#countdown > div {
+  position: relative;
+  float: left;
+  width: 25%;
+  font-size: 3vw;
+  font-weight: 100;
+  line-height: .8em;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+}
+
+#countdown > div > span {
+  display: block;
+  font-size: 1.2vw;
+  font-weight: 100;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  margin-top: 20px;
+  color: #ddd;
+  text-transform: lowercase
+}
+
+@media (max-width:480px) {
+    #countdown {
+        width: 100%;
+    }
+    #countdown > div {
+        width: 25%;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: .8em;
+        letter-spacing: 2px;
+    }
+    #countdown > div > span {
+      font-size: 11px;
+    }
+}
