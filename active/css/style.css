@@ -54,7 +54,7 @@ body {
 .content {
   text-align: left;
   position: relative;
-  margin: 20vh auto;
+  margin: 10vh auto;
 }
 .content * {
   pointer-events: visible;
